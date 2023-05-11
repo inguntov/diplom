@@ -17,6 +17,8 @@ window.onscroll = () => {
   navbar.classList.remove('active');
 }
 
+
+
 var swiper = new Swiper(".home", {
   spaceBetween: 30,
   centeredSlides: true,
@@ -29,6 +31,8 @@ var swiper = new Swiper(".home", {
     clickable: true
   },
 });
+
+
 
 var swiper = new Swiper(".coming-container",{
   spaceBetween: 30,
@@ -51,5 +55,23 @@ var swiper = new Swiper(".coming-container",{
     968: {
       slidesPerView: 5,
     },
+  },
+});
+
+
+var swiper = new Swiper(".about_Swiper", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });

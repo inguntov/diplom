@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
   <link rel="stylesheet" href="css/film_style.css" />
 </head>
@@ -18,7 +19,7 @@
   <header class="header">
     <div class="navbar container">
       <a href="./index.html">
-        <img src="img/logo.svg" alt="logo" />
+        <img src="img/logo_f.png" alt="logo" />
       </a>
       <nav class="nav">
         <button class="m-menu">
@@ -33,22 +34,18 @@
             <a href="./index.html" class="menu-link">Главная</a>
           </li>
           <li class="menu-item">
-            <a href="#" class="menu-link">Фильмы</a>
+            <a href="./films.html" class="menu-link">Фильмы</a>
           </li>
           <li class="menu-item">
-            <a href="#" class="menu-link">Кинотеатры</a>
+            <a href="./futute_films.html" class="menu-link">Скоро в прокате</a>
           </li>
           <li class="menu-item">
-            <a href="#" class="menu-link">События</a>
-          </li>
-          <li class="menu-item">
-            <a href="#" class="menu-link">Поддержка</a>
+            <a href="./about_us.html" class="menu-link">О нас</a>
           </li>
         </ul>
       </nav>
       <div class="user">
-        <span class="">Привет, Артем</span>
-        <img class="avatar" src="img/avatar.jpeg" alt="Артем Исламов" />
+        <a class="button button-pay">Перейти к оплате</a>
       </div>
     </div>
     <!-- /.navbar -->
@@ -145,9 +142,10 @@
     <!-- /.session -->
   </header>
   <div class="scheme container">
-    <svg class="scheme-svg" width="1018" height="1129" viewBox="0 0 1018 1129" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg class="scheme-svg" width="1018" height="1129" viewBox="0 0 1018 1129" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
       <path class="light" d="M52 77L125.04 10H892.96L966 77H52Z" fill="url(#paint0_linear_13_374)" />
-      <line  y1="5" x2="1018" y2="5" stroke="black" stroke-opacity="0.39" stroke-width="10" />
+      <line y1="5" x2="1018" y2="5" stroke="black" stroke-opacity="0.39" stroke-width="10" />
       <path
         d="M30 101.5C30 101.526 30.001 101.551 30.0029 101.577C30.0963 102.791 30.5368 104.596 31.5879 106.128C32.6658 107.699 34.4088 109 37 109H59.5C59.5238 109 59.5475 108.999 59.5712 108.997C60.8985 108.903 62.8511 108.373 64.4956 107.072C66.1806 105.738 67.5 103.622 67.5 100.5V91H65.5V100.5C65.5 102.978 64.486 104.529 63.2544 105.503C61.9964 106.499 60.4694 106.921 59.4627 107H37C35.1912 107 34.0175 106.134 33.2371 104.997C32.4402 103.835 32.0796 102.413 32 101.46V91H30V101.5ZM56.5 78H40.5C37.1863 78 34.5 80.6863 34.5 84V97C34.5 100.314 37.1863 103 40.5 103H56.5C59.8137 103 62.5 100.314 62.5 97V84C62.5 80.6863 59.8137 78 56.5 78Z"
         stroke="white" stroke-opacity="0.5" stroke-width="2" stroke-linejoin="round" />
@@ -1332,11 +1330,52 @@
       <span class="price-total">0</span> <span class="ruble">₽</span>
     </div>
     <!-- /.price-tag -->
-    <a href="#" class="button button-pay">Перейти к оплате</a>
+    <a class="button button-pay js-open-modal" data-modal="1">Перейти к оплате</a>
   </div>
   <!-- /.price -->
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <footer>
+    <a href="" class="logo">
+      <img src="./img/logo_f.png" alt=""><span>Кинотеатр</span>
+    </a>
+    <div class="social-media">
+      <a href=""><i class='bx bxl-vk'></i></a>
+      <a href=""><i class='bx bxl-telegram'></i></a>
+    </div>
+  </footer>
+  <div class="copyright">
+    <p>&#169; Lozovoy Ilya All Right Reserved</p>
+  </div>
+
+
+
+
+
+
+
+  <div class="modal" data-modal="1">
+    <!--   Svg иконка для закрытия окна  -->
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path
+        d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+    </svg>
+
+    <form action="">
+      <h2 class="modal__title">Оплатить заказ</h2>
+      <input type="text" name="name" id="" placeholder="Введите имя">
+      <input type="text" name="last_name" id="" placeholder="Введите фамилию">
+      <input type="tel" name="tel" id="" placeholder="Введите телефон">
+      <div class="">
+        <span>Стоимость: </span><span class="price-total_1">0 </span><span class="ruble">₽</span>
+      </div>
+      <input type="submit" value="Оплатить">
+    </form>
+  </div>
+  <!-- Подложка под модальным окном -->
+  <div class="overlay js-overlay-modal"></div>
+
   <script src="js/scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
 </body>
 
 </html>

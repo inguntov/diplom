@@ -367,7 +367,7 @@ footer {
   }
 }
 
-@media (max-width: 900px) {  
+@media (max-width: 900px) {
   .logo {
     flex-direction: column;
   }
@@ -428,16 +428,16 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(160px, auto));
   }
   header {
-    gap:5%
+    gap: 5%;
   }
   .shadow {
-    gap:5%
+    gap: 5%;
   }
 }
 
 @media (max-width: 472px) {
   .logo_text {
-    display:none;
+    display: none;
   }
   .newsletter form .email {
     width: auto;
@@ -448,14 +448,14 @@ footer {
     row-gap: 1rem;
   }
   header {
-    gap:5%
+    gap: 5%;
   }
   .shadow {
-    gap:5%
+    gap: 5%;
   }
-    .newsletter form .email {
-  width: 180px;
-}
+  .newsletter form .email {
+    width: 180px;
+  }
 }
 
 @media (max-width: 370px) {
@@ -479,6 +479,6 @@ footer {
     height: 240px;
   }
   .newsletter form .email {
-  width: 180px;
-}
+    width: 180px;
+  }
 }
